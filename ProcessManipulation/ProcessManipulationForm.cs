@@ -133,21 +133,21 @@ namespace ProcessManipulation
         // обработчик события нажатия на кнопку Stop основного диалога
         void BtnStop_Click(object sender, EventArgs e)
         {
-            ExecuteOnProcessesByName(listStartedAssemblies.SelectedItem.ToString(), (Process process) => process.Kill());
+            ExecuteOnProcessesByName(listStartedAssemblies.SelectedItem.ToString(), (process) => process.Kill());
             listStartedAssemblies.Items.Remove(listStartedAssemblies.SelectedItem);
         }
 
         // обработчик события нажатия на кнопку CloseWindow основного диалога
         void BtnCloseWindow_Click(object sender, EventArgs e)
         {
-            ExecuteOnProcessesByName(listStartedAssemblies.SelectedItem.ToString(), (Process process) => process.CloseMainWindow());
+            ExecuteOnProcessesByName(listStartedAssemblies.SelectedItem.ToString(), (process) => process.CloseMainWindow());
             listStartedAssemblies.Items.Remove(listStartedAssemblies.SelectedItem);
         }
 
         // обработчик события нажатия на кнопку Refresh основного диалога
         void BtnRefresh_Click(object sender, EventArgs e)
         {
-            ExecuteOnProcessesByName(listStartedAssemblies.SelectedItem.ToString(), (Process process) => process.Refresh());
+            ExecuteOnProcessesByName(listStartedAssemblies.SelectedItem.ToString(), (process) => process.Refresh());
         }
 
         // обработчик события изменения индекса выделенного элемента в списке доступных приложений
