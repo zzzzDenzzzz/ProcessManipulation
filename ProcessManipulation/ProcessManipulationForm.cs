@@ -165,13 +165,13 @@ namespace ProcessManipulation
             if (listStartedAssemblies.SelectedItems.Count == 0)
             {
                 btnStop.Enabled = false;
-                btnStop.Enabled = false;
+                btnRefresh.Enabled = false;
                 btnCloseWindow.Enabled = false;
             }
             else
             {
                 btnStop.Enabled = true;
-                btnStop.Enabled = true;
+                btnRefresh.Enabled = true;
                 btnCloseWindow.Enabled = true;
             }
         }
